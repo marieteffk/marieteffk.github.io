@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es-ES"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/wud-puesto-de-mando/recursos/0htw25qjp77-b.css"><meta name="theme-color" content="#f6f4f0"><title>Auditoría · WUD</title><meta name="description" content="Herramienta interna de WUD Interiorismo para el seguimiento de sus obras."><meta name="robots" content="noindex, nofollow"><link rel="icon" href="/wud-puesto-de-mando/recursos/icono.svg"><meta name="next-size-adjust" content=""><meta name="robots" content="noindex, nofollow"></head><body><div hidden=""><!--$--><!--/$--></div><div class="lg:flex"><a href="#contenido" class="solo-lector focus:not-sr-only focus:fixed focus:left-2 focus:top-2 focus:z-50 focus:h-auto focus:w-auto focus:rounded-md focus:bg-superficie focus:px-3 focus:py-2 focus:[clip:auto]">Saltar al contenido</a><aside class="sticky top-0 hidden h-dvh w-56 shrink-0 flex-col border-r border-borde bg-superficie lg:flex"><a class="flex h-14 items-center gap-2 border-b border-borde px-4" href="/wud-puesto-de-mando/"><span class="font-semibold tracking-wide">WUD</span><span class="text-suave">Puesto de mando</span></a><nav aria-label="Principal" class="flex-1 overflow-y-auto px-2.5 py-3"><ul class="space-y-0.5"><li><a class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium text-suave hover:bg-hundido hover:text-texto" href="/wud-puesto-de-mando/"><span>Inicio</span></a></li><li><a class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium text-suave hover:bg-hundido hover:text-texto" href="/wud-puesto-de-mando/obras/"><span>Obras</span></a></li><li><a class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium text-suave hover:bg-hundido hover:text-texto" href="/wud-puesto-de-mando/comunicaciones/"><span>Comunicaciones</span></a></li><li><a class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium text-suave hover:bg-hundido hover:text-texto" href="/wud-puesto-de-mando/bandeja/"><span>Bandeja de revisión</span><span class="rounded-sm px-1.5 text-[0.78rem] bg-hundido text-suave">6<span class="solo-lector"> pendientes</span></span></a></li><li><a class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium text-suave hover:bg-hundido hover:text-texto" href="/wud-puesto-de-mando/alertas/"><span>Alertas</span><span class="rounded-sm px-1.5 text-[0.78rem] bg-peligro text-white">2<span class="solo-lector"> pendientes</span></span></a></li><li><a class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium text-suave hover:bg-hundido hover:text-texto" href="/wud-puesto-de-mando/personas/"><span>Personas</span></a></li></ul><p class="mb-1 mt-5 px-2.5 text-[0.78rem] font-medium text-tenue">Administración</p><ul class="space-y-0.5"><li><a class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium text-suave hover:bg-hundido hover:text-texto" href="/wud-puesto-de-mando/usuarios/"><span>Usuarios</span></a></li><li><a aria-current="page" class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium bg-acento-suave text-acento-fuerte" href="/wud-puesto-de-mando/auditoria/"><span>Auditoría</span></a></li><li><a class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium text-suave hover:bg-hundido hover:text-texto" href="/wud-puesto-de-mando/ajustes/"><span>Ajustes</span></a></li></ul></nav><div class="border-t border-borde px-3 py-3"><a class="block rounded-md px-1.5 py-1 hover:bg-hundido" href="/wud-puesto-de-mando/cuenta/"><span class="block truncate font-medium">Marta Ruiz</span><span class="block text-[0.82rem] text-tenue">Admin WUD<!-- --> · Mi cuenta</span></a><form enctype="multipart/form-data" method="POST" data-demo=""><button type="submit" class="mt-1 min-h-9 rounded-md px-1.5 text-suave underline underline-offset-2 hover:text-texto">Cerrar sesión</button></form></div></aside><header class="sticky top-0 z-20 flex h-13 items-center justify-between border-b border-borde bg-superficie px-4 lg:hidden"><a class="flex items-center gap-2 py-3" href="/wud-puesto-de-mando/"><span class="font-semibold tracking-wide">WUD</span><span class="text-suave">Puesto de mando</span></a><button type="button" aria-expanded="false" aria-controls="menu-movil" class="min-h-10 rounded-md border border-borde-fuerte px-3 font-medium">Menú</button></header><div id="menu-movil" hidden="" class="fixed inset-x-0 bottom-0 top-13 z-20 flex flex-col bg-superficie lg:hidden"><nav aria-label="Principal" class="flex-1 overflow-y-auto px-2.5 py-3"><ul class="space-y-0.5"><li><a class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium text-suave hover:bg-hundido hover:text-texto" href="/wud-puesto-de-mando/"><span>Inicio</span></a></li><li><a class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium text-suave hover:bg-hundido hover:text-texto" href="/wud-puesto-de-mando/obras/"><span>Obras</span></a></li><li><a class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium text-suave hover:bg-hundido hover:text-texto" href="/wud-puesto-de-mando/comunicaciones/"><span>Comunicaciones</span></a></li><li><a class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium text-suave hover:bg-hundido hover:text-texto" href="/wud-puesto-de-mando/bandeja/"><span>Bandeja de revisión</span><span class="rounded-sm px-1.5 text-[0.78rem] bg-hundido text-suave">6<span class="solo-lector"> pendientes</span></span></a></li><li><a class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium text-suave hover:bg-hundido hover:text-texto" href="/wud-puesto-de-mando/alertas/"><span>Alertas</span><span class="rounded-sm px-1.5 text-[0.78rem] bg-peligro text-white">2<span class="solo-lector"> pendientes</span></span></a></li><li><a class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium text-suave hover:bg-hundido hover:text-texto" href="/wud-puesto-de-mando/personas/"><span>Personas</span></a></li></ul><p class="mb-1 mt-5 px-2.5 text-[0.78rem] font-medium text-tenue">Administración</p><ul class="space-y-0.5"><li><a class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium text-suave hover:bg-hundido hover:text-texto" href="/wud-puesto-de-mando/usuarios/"><span>Usuarios</span></a></li><li><a aria-current="page" class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium bg-acento-suave text-acento-fuerte" href="/wud-puesto-de-mando/auditoria/"><span>Auditoría</span></a></li><li><a class="flex min-h-10 items-center justify-between gap-2 rounded-md px-2.5 font-medium text-suave hover:bg-hundido hover:text-texto" href="/wud-puesto-de-mando/ajustes/"><span>Ajustes</span></a></li></ul></nav><div class="border-t border-borde px-3 py-3"><a class="block rounded-md px-1.5 py-1 hover:bg-hundido" href="/wud-puesto-de-mando/cuenta/"><span class="block truncate font-medium">Marta Ruiz</span><span class="block text-[0.82rem] text-tenue">Admin WUD<!-- --> · Mi cuenta</span></a><form enctype="multipart/form-data" method="POST" data-demo=""><button type="submit" class="mt-1 min-h-9 rounded-md px-1.5 text-suave underline underline-offset-2 hover:text-texto">Cerrar sesión</button></form></div></div><main id="contenido" class="min-w-0 flex-1"><p role="note" style="margin:0 0 1rem;padding:.55rem .8rem;border:1px solid #7a4f00;border-radius:6px;background:#f6ebd3;color:#7a4f00;font-size:.9rem">Demostración estática con datos inventados. No hay acceso con contraseña y los botones y formularios no guardan nada.</p><div class="mx-auto w-full max-w-6xl px-4 py-5 sm:px-6 lg:py-7"><header class="mb-5 flex flex-wrap items-end justify-between gap-3"><div class="min-w-0"><h1 class="text-[1.45rem] leading-tight">Auditoría</h1><p class="mt-1 text-suave">Registro de quién ha hecho qué y cuándo. No se puede modificar ni borrar: la propia base de datos lo impide.</p></div></header><section class="rounded-lg border border-borde bg-superficie"><nav aria-label="Filtrar por tipo de registro" class="flex flex-wrap gap-1.5 border-b border-borde px-4 py-3"><a aria-current="page" class="inline-flex items-center justify-center gap-1.5 rounded-md border font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-60 min-h-8 px-2.5 text-[0.85rem] bg-acento text-white border-acento hover:bg-acento-fuerte" href="/wud-puesto-de-mando/auditoria/">Todo</a><a class="inline-flex items-center justify-center gap-1.5 rounded-md border font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-60 min-h-8 px-2.5 text-[0.85rem] bg-superficie text-texto border-borde-fuerte hover:bg-hundido" href="/wud-puesto-de-mando/auditoria/">alerta</a><a class="inline-flex items-center justify-center gap-1.5 rounded-md border font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-60 min-h-8 px-2.5 text-[0.85rem] bg-superficie text-texto border-borde-fuerte hover:bg-hundido" href="/wud-puesto-de-mando/auditoria/">clasificacion</a><a class="inline-flex items-center justify-center gap-1.5 rounded-md border font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-60 min-h-8 px-2.5 text-[0.85rem] bg-superficie text-texto border-borde-fuerte hover:bg-hundido" href="/wud-puesto-de-mando/auditoria/">grupo</a><a class="inline-flex items-center justify-center gap-1.5 rounded-md border font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-60 min-h-8 px-2.5 text-[0.85rem] bg-superficie text-texto border-borde-fuerte hover:bg-hundido" href="/wud-puesto-de-mando/auditoria/">obra</a><a class="inline-flex items-center justify-center gap-1.5 rounded-md border font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-60 min-h-8 px-2.5 text-[0.85rem] bg-superficie text-texto border-borde-fuerte hover:bg-hundido" href="/wud-puesto-de-mando/auditoria/">obra oficio</a><a class="inline-flex items-center justify-center gap-1.5 rounded-md border font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-60 min-h-8 px-2.5 text-[0.85rem] bg-superficie text-texto border-borde-fuerte hover:bg-hundido" href="/wud-puesto-de-mando/auditoria/">persona</a><a class="inline-flex items-center justify-center gap-1.5 rounded-md border font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-60 min-h-8 px-2.5 text-[0.85rem] bg-superficie text-texto border-borde-fuerte hover:bg-hundido" href="/wud-puesto-de-mando/auditoria/">usuario</a></nav><div class="overflow-x-auto"><table class="tabla"><thead><tr><th scope="col">Cuándo</th><th scope="col">Quién</th><th scope="col">Qué</th><th scope="col" class="hidden md:table-cell">Obra</th><th scope="col" class="hidden sm:table-cell">Origen</th><th scope="col">Detalle</th></tr></thead><tbody><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:21</td><td>Marta Ruiz</td><td class="first-letter:uppercase">sesion: iniciada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td>—</td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:19</td><td>Marta Ruiz</td><td class="first-letter:uppercase">sesion: iniciada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td>—</td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:19</td><td>Marta Ruiz</td><td class="first-letter:uppercase">sesion: iniciada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td>—</td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">obra: creada</td><td class="hidden md:table-cell">OLMO 12 – 3.º B</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "codigo": "OLMO 12 – 3.º B",
+ "oficios": [
+  "Albañilería",
+  "Pintura"
+ ],
+ "cliente_id": "63cb2f26-985c-47db-84ba-7af48281f894"
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Bot</td><td class="first-letter:uppercase">alerta: creada</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "pertenencia",
+ "motivo": "Es cliente: solo puede estar en Detalles",
+ "titulo": "El cliente está en un grupo interno: ELECTRICIDAD – MARGARITA 7 – 1.º",
+ "telegram_user_id": 7001
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Bot</td><td class="first-letter:uppercase">grupo: bloqueado</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "motivo": "El cliente está en un grupo interno: ELECTRICIDAD – MARGARITA 7 – 1.º",
+ "telegram_user_id": 7001
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Bot</td><td class="first-letter:uppercase">alerta: creada</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "pertenencia",
+ "motivo": "Cuenta de Telegram sin ficha en el sistema",
+ "titulo": "Persona no prevista en DETALLES – MARGARITA 7 – 1.º",
+ "telegram_user_id": 8001
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Álvaro Peña</td><td class="first-letter:uppercase">clasificacion: confirmada</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Antes</strong>
+<!-- -->{
+ "tipo": "cambio_planning",
+ "resumen": "Propuesta: pasar la segunda mano de pintura a la semana del 30 si se confirma el retraso de carpintería.",
+ "oficio_id": "830cd849-d0fe-427e-8cbd-cff9454bc543",
+ "importe_cent": null,
+ "fecha_detectada": null
+}</pre><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "cambio_planning",
+ "resumen": "Propuesta: pasar la segunda mano de pintura a la semana del 30 si se confirma el retraso de carpintería.",
+ "oficio_id": "830cd849-d0fe-427e-8cbd-cff9454bc543",
+ "importe_cent": null,
+ "fecha_detectada": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>IA</td><td class="first-letter:uppercase">clasificacion: automatica</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">sistema</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "otro",
+ "motivos": [],
+ "confianza": 0.86,
+ "oficio_id": "830cd849-d0fe-427e-8cbd-cff9454bc543",
+ "importe_cent": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>IA</td><td class="first-letter:uppercase">clasificacion: a revision</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">sistema</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "otro",
+ "motivos": [
+  "Confianza 0,55, por debajo del mínimo"
+ ],
+ "confianza": 0.55,
+ "oficio_id": "acd822ce-33cd-436d-9cf5-2dbdd5a8447d",
+ "importe_cent": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>IA</td><td class="first-letter:uppercase">clasificacion: a revision</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">sistema</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "otro",
+ "motivos": [
+  "Confianza 0,50, por debajo del mínimo",
+  "Audio sin transcribir"
+ ],
+ "confianza": 0.5,
+ "oficio_id": null,
+ "importe_cent": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>IA</td><td class="first-letter:uppercase">clasificacion: automatica</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">sistema</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "otro",
+ "motivos": [],
+ "confianza": 0.9,
+ "oficio_id": null,
+ "importe_cent": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>IA</td><td class="first-letter:uppercase">clasificacion: automatica</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">sistema</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "modificacion",
+ "motivos": [],
+ "confianza": 0.88,
+ "oficio_id": null,
+ "importe_cent": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>IA</td><td class="first-letter:uppercase">clasificacion: a revision</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">sistema</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "presupuesto",
+ "motivos": [
+  "Tiene efecto económico: lo confirma una persona"
+ ],
+ "confianza": 0.92,
+ "oficio_id": "e0be92d4-feb4-4fcf-98ae-30dbbadf4af0",
+ "importe_cent": 624000
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>IA</td><td class="first-letter:uppercase">clasificacion: a revision</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">sistema</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "cambio_planning",
+ "motivos": [
+  "Confianza 0,74, por debajo del mínimo",
+  "Cambia el planning: lo autoriza una persona"
+ ],
+ "confianza": 0.74,
+ "oficio_id": "830cd849-d0fe-427e-8cbd-cff9454bc543",
+ "importe_cent": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>IA</td><td class="first-letter:uppercase">clasificacion: a revision</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">sistema</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "cambio_planning",
+ "motivos": [
+  "Cambia el planning: lo autoriza una persona"
+ ],
+ "confianza": 0.91,
+ "oficio_id": "e0be92d4-feb4-4fcf-98ae-30dbbadf4af0",
+ "importe_cent": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>IA</td><td class="first-letter:uppercase">clasificacion: automatica</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">sistema</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "repaso",
+ "motivos": [],
+ "confianza": 0.85,
+ "oficio_id": "830cd849-d0fe-427e-8cbd-cff9454bc543",
+ "importe_cent": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>IA</td><td class="first-letter:uppercase">clasificacion: a revision</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">sistema</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "factura",
+ "motivos": [
+  "Tiene efecto económico: lo confirma una persona"
+ ],
+ "confianza": 0.95,
+ "oficio_id": "764c0a37-be56-4433-ad37-b1c466061194",
+ "importe_cent": 181500
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>IA</td><td class="first-letter:uppercase">clasificacion: automatica</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">sistema</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "pendiente",
+ "motivos": [],
+ "confianza": 0.87,
+ "oficio_id": "764c0a37-be56-4433-ad37-b1c466061194",
+ "importe_cent": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>IA</td><td class="first-letter:uppercase">clasificacion: automatica</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">sistema</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "instruccion",
+ "motivos": [],
+ "confianza": 0.94,
+ "oficio_id": null,
+ "importe_cent": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>IA</td><td class="first-letter:uppercase">clasificacion: automatica</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">sistema</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "consulta_tecnica",
+ "motivos": [],
+ "confianza": 0.89,
+ "oficio_id": "acd822ce-33cd-436d-9cf5-2dbdd5a8447d",
+ "importe_cent": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>IA</td><td class="first-letter:uppercase">clasificacion: a revision</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">sistema</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "aumento",
+ "motivos": [
+  "Tiene efecto económico: lo confirma una persona"
+ ],
+ "confianza": 0.9,
+ "oficio_id": "66013ee4-5de8-4177-83f0-64bedd2eeadf",
+ "importe_cent": 48000
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>IA</td><td class="first-letter:uppercase">clasificacion: automatica</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">sistema</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "incidencia",
+ "motivos": [],
+ "confianza": 0.92,
+ "oficio_id": "66013ee4-5de8-4177-83f0-64bedd2eeadf",
+ "importe_cent": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>IA</td><td class="first-letter:uppercase">clasificacion: automatica</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">sistema</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "instruccion",
+ "motivos": [],
+ "confianza": 0.93,
+ "oficio_id": null,
+ "importe_cent": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">grupo: vinculado</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "detalles",
+ "oficio": null,
+ "titulo": "DETALLES – MARGARITA 7 – 1.º",
+ "chat_id": -1002000000009
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">grupo: vinculado</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "planning",
+ "oficio": null,
+ "titulo": "PLANNING DE OBRA – MARGARITA 7 – 1.º",
+ "chat_id": -1002000000008
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">grupo: vinculado</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "contabilidad",
+ "oficio": null,
+ "titulo": "CONTABILIDAD DE OBRA – MARGARITA 7 – 1.º",
+ "chat_id": -1002000000007
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">grupo: vinculado</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "oficio",
+ "oficio": "Carpintería",
+ "titulo": "CARPINTERÍA – MARGARITA 7 – 1.º",
+ "chat_id": -1002000000006
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">grupo: vinculado</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "oficio",
+ "oficio": "Pintura",
+ "titulo": "PINTURA – MARGARITA 7 – 1.º",
+ "chat_id": -1002000000005
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">grupo: vinculado</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "oficio",
+ "oficio": "Electricidad",
+ "titulo": "ELECTRICIDAD – MARGARITA 7 – 1.º",
+ "chat_id": -1002000000004
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">grupo: vinculado</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "oficio",
+ "oficio": "Fontanería",
+ "titulo": "FONTANERÍA – MARGARITA 7 – 1.º",
+ "chat_id": -1002000000003
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">grupo: vinculado</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "oficio",
+ "oficio": "Albañilería",
+ "titulo": "ALBAÑILERÍA – MARGARITA 7 – 1.º",
+ "chat_id": -1002000000002
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">grupo: vinculado</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "general",
+ "oficio": null,
+ "titulo": "REFORMA – MARGARITA 7 – 1.º",
+ "chat_id": -1002000000001
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">persona: invitacion generada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "caduca_en_dias": 7
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">persona: creada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "profesional",
+ "nombre": "Elena Marín",
+ "empresa": "Marín Arquitectura Técnica"
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Bot</td><td class="first-letter:uppercase">persona: verificada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "telegram_user_id": 7001,
+ "telegram_usuario": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">persona: invitacion generada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "caduca_en_dias": 7
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">persona: creada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "cliente",
+ "nombre": "Carmen Ortega",
+ "empresa": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Bot</td><td class="first-letter:uppercase">persona: verificada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "telegram_user_id": 6005,
+ "telegram_usuario": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">persona: invitacion generada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "caduca_en_dias": 7
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">obra oficio: subcontrata asignada</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Antes</strong>
+<!-- -->{
+ "persona_id": null
+}</pre><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "persona_id": "6a2518ff-f765-489a-aba3-d7ff9f2de954"
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">persona: creada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "subcontrata",
+ "nombre": "Tomás Herrero",
+ "empresa": "Carpintería Herrero"
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Bot</td><td class="first-letter:uppercase">persona: verificada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "telegram_user_id": 6004,
+ "telegram_usuario": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">persona: invitacion generada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "caduca_en_dias": 7
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">obra oficio: subcontrata asignada</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Antes</strong>
+<!-- -->{
+ "persona_id": null
+}</pre><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "persona_id": "ecca3c5a-da22-40d3-bfcd-f581f10c08ce"
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">persona: creada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "subcontrata",
+ "nombre": "Nuria Blanco",
+ "empresa": "Pinturas Blanco"
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Bot</td><td class="first-letter:uppercase">persona: verificada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "telegram_user_id": 6003,
+ "telegram_usuario": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">persona: invitacion generada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "caduca_en_dias": 7
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">obra oficio: subcontrata asignada</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Antes</strong>
+<!-- -->{
+ "persona_id": null
+}</pre><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "persona_id": "3fc2a0ee-7228-4f2f-9b45-46f437cb9b94"
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">persona: creada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "subcontrata",
+ "nombre": "Sergio Vidal",
+ "empresa": "Vidal Instalaciones"
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Bot</td><td class="first-letter:uppercase">persona: verificada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "telegram_user_id": 6002,
+ "telegram_usuario": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">persona: invitacion generada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "caduca_en_dias": 7
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">obra oficio: subcontrata asignada</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Antes</strong>
+<!-- -->{
+ "persona_id": null
+}</pre><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "persona_id": "21a508ca-8f8f-41ad-9e8f-258e89ce08e9"
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">persona: creada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "subcontrata",
+ "nombre": "Raúl Campos",
+ "empresa": "Fontanería Campos"
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Bot</td><td class="first-letter:uppercase">persona: verificada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "telegram_user_id": 6001,
+ "telegram_usuario": null
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">persona: invitacion generada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "caduca_en_dias": 7
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">obra oficio: subcontrata asignada</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Antes</strong>
+<!-- -->{
+ "persona_id": null
+}</pre><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "persona_id": "f2924192-a841-4fcd-86ea-6a39bddc362f"
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">persona: creada</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "tipo": "subcontrata",
+ "nombre": "Paco Medina",
+ "empresa": "Reformas Medina, S.L."
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">obra: editada</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Antes</strong>
+<!-- -->{
+ "estado": "borrador",
+ "nombre": "MARGARITA 7 – 1.º",
+ "carpeta_raiz": "Obras/2026/MARGARITA 7 – 1.º",
+ "fecha_inicio": "2026-10-05",
+ "margen_defecto_pb": null,
+ "fecha_fin_prevista": "2027-01-29"
+}</pre><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "estado": "en_curso",
+ "nombre": "Reforma integral Margarita 7 – 1.º",
+ "carpeta_raiz": "Obras/2026/MARGARITA 7 – 1.º",
+ "fecha_inicio": "2026-10-05",
+ "margen_defecto_pb": null,
+ "fecha_fin_prevista": "2027-01-29"
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">obra: creada</td><td class="hidden md:table-cell">MARGARITA 7 – 1.º</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "codigo": "MARGARITA 7 – 1.º",
+ "oficios": [
+  "Albañilería",
+  "Fontanería",
+  "Electricidad",
+  "Pintura",
+  "Carpintería"
+ ],
+ "cliente_id": "72d89e79-a282-453b-9bfe-6f2306f4fce5"
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Lucía Gil</td><td class="first-letter:uppercase">usuario: telegram vinculado</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "telegram_user_id": 5004
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Lucía Gil</td><td class="first-letter:uppercase">usuario: enlace telegram</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td>—</td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Iván Soto</td><td class="first-letter:uppercase">usuario: telegram vinculado</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "telegram_user_id": 5003
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Iván Soto</td><td class="first-letter:uppercase">usuario: enlace telegram</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td>—</td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Álvaro Peña</td><td class="first-letter:uppercase">usuario: telegram vinculado</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "telegram_user_id": 5002
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Álvaro Peña</td><td class="first-letter:uppercase">usuario: enlace telegram</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td>—</td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">usuario: telegram vinculado</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">telegram</td><td><details><summary class="enlace cursor-pointer">Ver</summary><div class="mt-1 max-w-[42ch] space-y-1 text-[0.82rem]"><pre class="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-hundido p-2"><strong>Después</strong>
+<!-- -->{
+ "telegram_user_id": 5001
+}</pre></div></details></td></tr><tr><td class="whitespace-nowrap text-suave">19/11/2026 12:18</td><td>Marta Ruiz</td><td class="first-letter:uppercase">usuario: enlace telegram</td><td class="hidden md:table-cell">—</td><td class="hidden capitalize text-suave sm:table-cell">web</td><td>—</td></tr></tbody></table></div></section></div><!--$--><!--/$--></main></div><script>(function(){
+  var aviso;
+  function decir(){
+    if(!aviso){aviso=document.createElement('div');aviso.setAttribute('role','status');aviso.style.cssText='position:fixed;left:50%;bottom:1rem;transform:translateX(-50%);max-width:calc(100% - 2rem);padding:.6rem .9rem;border-radius:6px;background:#1f1d1a;color:#fff;font-size:.9rem;z-index:50';document.body.appendChild(aviso);}
+    aviso.textContent='Esto es una demostración estática: aquí no se guarda ni se filtra nada.';
+    aviso.hidden=false;clearTimeout(decir.t);decir.t=setTimeout(function(){aviso.hidden=true;},4000);
+  }
+  document.addEventListener('submit',function(e){e.preventDefault();decir();});
+  document.addEventListener('click',function(e){
+    var el=e.target.closest('button,a[data-demo]');if(!el)return;
+    if(el.getAttribute('aria-controls')==='menu-movil'){var m=document.getElementById('menu-movil');m.hidden=!m.hidden;el.setAttribute('aria-expanded',String(!m.hidden));el.textContent=m.hidden?'Menú':'Cerrar';return;}
+    if(el.tagName==='A'||!el.closest('form')||el.type==='button'){e.preventDefault();decir();}
+  });
+})();</script></body></html>
